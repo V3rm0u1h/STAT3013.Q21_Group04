@@ -8,12 +8,29 @@ STAT3013.Q21_Group04/
 │   ├── raw/  
 │   ├── cleaned_data/             
 │   └── processed/                      
-├── notebooks-DEA/                   
-│   ├── 01_data_cleaning.ipynb    
-│   ├── 02_outlier_detection.ipynb      
-│   ├── 03_rfm_calculation.ipynb
-│   ├── 04_coupon_tenure.ipynb
-│   └── 05_EDA.ipynb                            
+├── data_engineering/
+│   ├── data_cleaning.ipynb
+│   └── outlier_detection.ipynb
+│
+├── descriptive & RFM/
+│   ├── rfm_calculation.ipynb
+│   ├── coupon_tenure.ipynb
+│   └── eda.ipynb
+│
+├── inferential/
+│   ├── ttest_anova.ipynb
+│   └── chi_square.ipynb
+│
+├── clustering/
+│   ├── kmeans.ipynb
+│   ├── dpmeans.ipynb
+│   └── validation.ipynb
+│
+├── regression/
+│   └── lasso_regression.ipynb
+├── lightgbm
+│   ├── ml_data_preparation.ipynb
+│   └──                   
 ├── .gitignore             
 ├── requirements.txt       
 └── README.md
