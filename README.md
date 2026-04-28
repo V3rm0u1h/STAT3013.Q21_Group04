@@ -2,12 +2,10 @@
 ## Structure
 ```
 STAT3013.Q21_Group04/
+├── report/ # final report
 ├── assets/                  
 │   └── images/  
-├── data/                  
-│   ├── raw/  
-│   ├── cleaned_data/             
-│   └── processed/                      
+├── data/                                      
 ├── data_engineering/
 │   ├── data_cleaning.ipynb
 │   └── outlier_detection.ipynb
@@ -28,9 +26,8 @@ STAT3013.Q21_Group04/
 │
 ├── regression/
 │   └── lasso_regression.ipynb
-├── lightgbm
-│   ├── ml_data_preparation.ipynb
-│   └──                   
+│
+├── machine_learning/                 
 ├── .gitignore             
 ├── requirements.txt       
 └── README.md
