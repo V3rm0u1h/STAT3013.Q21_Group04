@@ -47,8 +47,9 @@ STAT3013.Q21_Group04/
 ```
 
 ##Setup & Installation
+
 1. Environment Requirements
-Python Version: 3.9 hoặc mới hơn.
+Python version 3.9 or higher is required.
 
 Main Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy.
 
@@ -56,6 +57,7 @@ Main Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy.
 It is recommended to use a virtual environment. Install the required Python libraries using pip:
 
 Bash
+
 pip install -r requirements.txt
 
 3. How to Run
