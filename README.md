@@ -51,6 +51,7 @@ STAT3013.Q21_Group04/
 Python Version: 3.9 hoặc mới hơn.
 
 Main Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy.
+
 2. Install Dependencies
 It is recommended to use a virtual environment. Install the required Python libraries using pip:
 
