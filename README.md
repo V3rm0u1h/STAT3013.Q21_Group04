@@ -4,61 +4,76 @@
 ---
 
 ### 🔗 Project Resources
-* **Presentation Video:** [(https://drive.google.com/drive/folders/12iACTTKJFjdqZ5FNYHfS39apPBIVNQb1)]
+* **Presentation Video:** https://drive.google.com/drive/folders/12iACTTKJFjdqZ5FNYHfS39apPBIVNQb1
+*  **dataset 1:** “Marketing Insights for E-Commerce Company.” Accessed: Apr. 28, 2026. [Online]. Available: 
+https://www.kaggle.com/datasets/rishikumarrajvansh/marketing-insights-for-e-commerce-company
+* **dataset 2:** “Ecommerce Customer Churn Analysis and Prediction.” Accessed: Apr. 28, 2026. [Online]. 
+Available: https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction
 
 ---
 
 ### 📖 Project Overview
-Dự án tập trung vào việc phân tích hành vi người tiêu dùng đối với các chương trình khuyến mãi thông qua các kỹ thuật thống kê và học máy. Dự án sử dụng mô hình RFM (Recency, Frequency, Monetary) kết hợp với thuật toán phân cụm **DP-Means** để phân loại khách hàng, từ đó đưa ra các chiến lược marketing phù hợp.
-
+The goals of the study can be formulated as follows:
+- Measuring the efficiency of coupons: Understanding the link between coupons and such loyalty
+related characteristics as frequency of purchases and cashback.
+- Modeling the churn risk: Building a machine learning model that will reveal the correlation between 
+extensive coupon usage and increased churn after the end of the promotion period.
+-  Analyzing the impact of satisfaction: Revealing the influence of satisfaction on the impact of coupons 
+on customer loyalty
 ---
 ## Structure
 ```
 STAT3013.Q21_Group04/
-├── report/ # final report
+├── report/ # full report, IEEE report, AI-generation Check Screenshot, AI Use Explanation
 ├── assets/                  
 │   └── images/  
-├── data/                                      
-├── data_engineering/
-│   ├── data_cleaning.ipynb
-│   └── outlier_detection.ipynb
-│
-├── descriptive & RFM/
-│   ├── rfm_calculation.ipynb
-│   ├── coupon_tenure.ipynb
-│   └── eda.ipynb
-│
-├── inferential/
-│   ├── ttest_anova.ipynb
-│   └── chi_square.ipynb
-│
-├── clustering/
-│   ├── kmeans.ipynb
-│   ├── dpmeans.ipynb
-│   └── validation.ipynb
-│
-├── regression/
-│   └── lasso_regression.ipynb
-│
-├── machine_learning/                 
+├── data/
+│   ├── cleaned_data
+│   ├── processed
+│   └── raw                                    
+├── data_engineering/ # preprocessing and imputation
+├── descriptive & RFM/ # RFM, enrich feature and EDA
+├── DPmeans/
+├── Lasso_algorithm/
+├── lightgbm&cataboost/                 
 ├── .gitignore             
 ├── requirements.txt       
 └── README.md
 ```
 
-##Setup & Installation
+## Setup & Installation
 
-1. Environment Requirements
-Python version 3.9 or higher is required.
-
-Main Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, scipy.
-
+1. Requirements
+- Python 3.8+
+- Cython
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scipy
+- scikit-learn
+- xgboost
+- lightgbm
+- catboost
+- optuna
+- shap
 2. Install Dependencies
-It is recommended to use a virtual environment. Install the required Python libraries using pip:
+It is recommended to use a virtual environment. 
 
-Bash
+```python -m venv .venv```
 
-pip install -r requirements.txt
+Windows:
+```
+.venv\Scripts\activate
+```
+
+Mac/Linux:
+```
+source .venv/bin/activate
+```
+3. Install the required Python libraries using pip:
+
+`pip install -r requirements.txt`
 
 3. How to Run
 The analysis is organized into Jupyter Notebooks for a step-by-step workflow. To view and run the code:
@@ -68,4 +83,4 @@ Launch Jupyter Notebook, JupyterLab, or open the project in VS Code.
 Navigate to the Notebooks/ directory (or your specific analysis folders like clustering/, inferential/, etc.).
 
 Open the desired .ipynb file and run the cells sequentially to see the data processing, statistical tests, and machine learning results.
-```
+
